@@ -1,8 +1,0 @@
-package helloworld.action;
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.convention.annotation.Action;
-public class HeyJudeAction extends ActionSupport{
-	public String execute() throws Exception{
-		return "success";
-	}
-}
