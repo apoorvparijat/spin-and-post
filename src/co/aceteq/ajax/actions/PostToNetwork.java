@@ -102,7 +102,7 @@ public class PostToNetwork extends AjaxAction  {
         String [] passwords = {"ebjg2%@me123","HkbBaZ#S1VcW","A&(Ysytug13(","$gabe=$user;","#YhGT#wZ7Wsa","aj2F3MBy8I%A","ajRBjU4HaZ#d","ywrLcx&A5PjA","2yeOhw3ZWCfL","(ie@Hfx9e7Lr","qnujdU(MJJe9","^NXzWMWg@@h@","ys79Dk&YR5*Y","ln%oJfIxw)Wd","1sx@y^TTYAvf","yRYiJiq9K9G#","t9FV4(C#z50O","U!@o1mP63(B4","CMg&2g7LEfVx","896hysidds","ebjg2%@me123","ebjg2%@me123","$new=\"123\";"};
         //String [] hosts = {"http://localhost/~apoorvparijat/wordpress"};
         //String [] usernames = {"admin"};
-        //String [] passwords = {"shonen"};
+        //String [] passwords = {"admin"};
         int totalDomains = hosts.length;
         int numOfDomains = hosts.length;
         System.out.println("numOfArticles = " + numOfArticles + " noArticle = " + noArticle);

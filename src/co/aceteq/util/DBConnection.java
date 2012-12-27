@@ -72,7 +72,7 @@ public class DBConnection  {
 
     public DBConnection() {
         this.user = "root";
-            this.pass = "shonen";
+            this.pass = "bing";
             this.db = "spinandpost";
             connectionPool = null;
             Connection connection = null;
