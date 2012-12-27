@@ -1,0 +1,250 @@
+/* --------------------------------------------------------------
+
+   forms.css
+   * Sets up some default styling for forms
+   * Gives you classes to enhance your forms
+
+   Usage:
+   * For text fields, use class .title or .text
+   * For inline forms, use .inline (even when using columns)
+
+-------------------------------------------------------------- */
+
+/*
+  A special hack is included for IE8 since it does not apply padding
+  correctly on fieldsets
+ */
+ *{
+     font-family: 'Muli';
+ }
+label    { font-weight: bold; font-family: Lucida Grande;}
+fieldset { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+legend   { font-weight: bold; font-size:1.2em; margin-top:-0.2em; margin-bottom:1em; }
+
+fieldset, #IE8#HACK { padding-top:1.4em; }
+legend, #IE8#HACK { margin-top:0; margin-bottom:0; }
+
+.label_imp {color: #c34851;}
+
+/* Form fields
+-------------------------------------------------------------- */
+
+/*
+  Attribute selectors are used to differentiate the different types
+  of input elements, but to support old browsers, you will have to
+  add classes for each one. ".title" simply creates a large text
+  field, this is purely for looks.
+ */
+input[type=text], input[type=password], input[type=url], input[type=email],
+input.text, input.title,
+textarea {
+  width: 220px;
+		height: 25px;
+		margin-top: 15px;
+		border: 1px solid #e1e1e1;
+		border-top: 1px solid #c5c5c5;
+		color: #acacac;
+		border-radius: 6px;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		padding-left: 5px;
+		box-shadow:inset 0px 1px 2px #d6d6d6;
+		font-size: 13px;;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus,
+input.text:focus, input.title:focus,
+textarea:focus {
+  		border: 1px solid #83b7e0;
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		color: #7e7e7e;
+		outline: 0;
+}
+
+input[type=radio]
+		{background: #000;
+		width: 14px;
+		height: 14px;}
+		
+input[type=radio]:checked
+		{background: #000;
+		width: 14px;
+		height: 14px;}
+
+/*BUTTONS ----------------------------------------------------
+------------------------------------------------------------*/
+
+/*BLUE BUTTON ------ */
+
+.blue_button{
+		background-color: #8BBAD9;
+		background-image: -webkit-gradient( linear, left top, left bottom, color-stop(.15, rgba(139, 187, 218, 0)), color-stop(1, #2A81BA) );
+		background-image: -moz-linear-gradient( rgba(139, 187, 218, 0), #2A81BA );
+		border: solid 1px #597799;
+		-webkit-box-shadow: inset 0 1px 2px #B1DFF3, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px 				rgba(0, 0, 0, .08);
+		-moz-box-shadow: inset 0 1px 2px #B1DFF3, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px 					rgba(0, 0, 0, .08);
+		box-shadow: inset 0 1px 2px #B1DFF3, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px rgba(0, 				0, 0, .08);
+		-webkit-animation-name: glow;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease-in-out;
+		color: white;
+		padding: 4px;
+		text-shadow: 0 1px 1px #597699;
+		font-family: Lucida Grande;
+		font-weight: bold;
+		font-size: 12px;
+		cursor: pointer;
+		display: inline-block;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: background 0.2s ease-in-out;
+		-webkit-tap-highlight-color: transparent;
+		min-width: 80px;}
+		
+.blue_button:hover
+		{-webkit-animation-name:none;
+  		background-color:#73ADD3;
+		}
+		
+.blue_button:active
+		{  -webkit-animation-name:none;
+  		-webkit-box-shadow:rgba(255, 255, 255, 0.347656) 0 -1px 1px inset, rgba(0, 0, 0, 0.277344) 0 1px 2px inset, #FFFFFF 0 1px 0;
+  		box-shadow:rgba(255, 255, 255, 0.449219) 0 -1px 1px inset, rgba(0, 0, 0, 0.277344) 0 1px 2px inset, #FFFFFF 0 1px 0;
+  		color:#F4F4F4;
+  		position:relative;
+  		top:1px;}
+  		
+/*RED BUTTON ------ */
+  		
+
+.red_button{
+		background-color: #d67979;
+		background-image: -webkit-gradient( linear, left top, left bottom, color-stop(.15, rgba(218, 139, 139, 0)), color-stop(1, #ba5050) );
+		background-image: -moz-linear-gradient( rgba(186, 80, 80, 0), #ba5050 );
+		border: solid 1px #d24e50;
+		-webkit-box-shadow: inset 0 1px 2px #e99494, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px 				rgba(0, 0, 0, .08);
+		-moz-box-shadow: inset 0 1px 2px #e99494, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px 					rgba(0, 0, 0, .08);
+		box-shadow: inset 0 1px 2px #e99494, inset 0 0 1px rgba(159, 210, 236, .5), inset 0 -1px 1px rgba(159, 210, 236, .5), 0 1px 1px rgba(0, 				0, 0, .08);
+		-webkit-animation-name: glow;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease-in-out;
+		color: white;
+		padding: 4px;
+		text-shadow: 0 1px 1px #b54345;
+		font-family: Lucida Grande;
+		font-weight: bold;
+		font-size: 12px;
+		cursor: pointer;
+		display: inline-block;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: background 0.2s ease-in-out;
+		-webkit-tap-highlight-color: transparent;
+		min-width: 80px;}
+		
+.red_button:hover
+		{-webkit-animation-name:none;
+  		background-color:#d36e6f;
+		}
+		
+.red_button:active
+		{  -webkit-animation-name:none;
+  		-webkit-box-shadow:rgba(255, 255, 255, 0.347656) 0 -1px 1px inset, rgba(0, 0, 0, 0.277344) 0 1px 2px inset, #FFFFFF 0 1px 0;
+  		box-shadow:rgba(255, 255, 255, 0.449219) 0 -1px 1px inset, rgba(0, 0, 0, 0.277344) 0 1px 2px inset, #FFFFFF 0 1px 0;
+  		color:#F4F4F4;
+  		position:relative;
+  		top:1px;}
+  		
+		
+		
+select { background-color:#c1c1c1; border-width:1px; border-style:solid; }
+
+input[type=text], input[type=password], input[type=url], input[type=email],
+input.text, input.title,
+textarea, select {
+  margin:0.5em 0;
+}
+
+input.text,
+input.title { width: 300px; padding:5px; }
+input.title { font-size:1.5em; }
+textarea    { width: 390px; height: 250px; padding:5px; }
+
+
+/*
+  This is to be used on forms where a variety of elements are
+  placed side-by-side. Use the p tag to denote a line.
+ */
+form.inline { line-height:3; }
+form.inline p { margin-bottom:0; }
+
+
+/* Success, info, notice and error/alert boxes
+-------------------------------------------------------------- */
+
+.loader{
+    position:absolute;
+    border:0px solid red;
+    top:-2px;
+    display:none;
+}
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.alert {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.notice {background:#E8F4FD;color: #336187; border-color: #77A0C2;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}
+
+.error,.notice,.success,.alert{
+    display:none;
+}
+table{
+    border-collapse: collapse;
+}
+
+.projects thead tr:hover{
+    background-color:transparent;
+    
+}
+.projects tr{
+    border-bottom:1px solid #d36e6f;
+    cursor:pointer;
+}
+
+.projects tr:hover{
+    background-color: #f2f2f2;
+}
+
+.projects td{
+    padding:10px;
+    
+}
+tr:nth-child(2n){
+    
+   
+}
+
+.assign-project-wrapper{
+    position:fixed;
+    top:200px;
+    right:250px;
+    background-color:white;
+    padding:16px 10px;
+    border:1px solid #ccc;
+}
+
+.assign-project-wrapper .header{
+    font-weight: bold;
+}
+
+.container{
+    position:relative;
+}

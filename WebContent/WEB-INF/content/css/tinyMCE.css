@@ -1,0 +1,14 @@
+/* 
+    Document   : tinyMCE
+    Created on : Jun 20, 2011, 1:59:10 AM
+    Author     : apoorv
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body, td, pre {color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:14px; margin:8px;}

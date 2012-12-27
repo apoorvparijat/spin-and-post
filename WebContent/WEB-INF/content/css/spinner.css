@@ -1,0 +1,277 @@
+/* 
+    Document   : playlist
+    Created on : Jun 14, 2011, 11:19:45 PM
+    Author     : apoorv
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+root { 
+    display: block;
+}
+
+body{  
+    
+}
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+                    
+                       border:0px solid #ccc; 
+                        margin-top:3px;
+                        margin-bottom: 3px;
+                        
+}
+
+.grid_1:hover,
+.grid_2:hover,
+.grid_3:hover,
+.grid_4:hover,
+.grid_5:hover,
+.grid_6:hover,
+.grid_7:hover,
+.grid_8:hover,
+.grid_9:hover,
+.grid_10:hover,
+.grid_11:hover,
+.grid_12 :hover{
+}
+
+.grid_1 .text,
+.grid_2 .text,
+.grid_3 .text,
+.grid_4 .text,
+.grid_5 .text,
+.grid_6 .text,
+.grid_7 .text,
+.grid_8 .text,
+.grid_9 .text,
+.grid_10 .text,
+.grid_11 .text,
+.grid_12  .text{
+                        padding:15px;
+                        color: #fff;
+                        font-size:20px;
+                        text-shadow: -1px -1px 2px #ccc, 1px 1px #333, 0px 0px 4px #b5b5b5;
+}
+
+h1{
+    font-size:30px;
+    color:#333;
+    font-variant: small-caps;
+    border-bottom: 2px solid #cc0033;
+    font-family: "Caudex";
+    width:100%;
+}
+
+.zoom-popup{
+    position:absolute;
+    z-index: 3;
+    display:none;  
+}
+
+.zoom-popup a{
+    cursor:pointer;
+    text-decoration: underline;
+    
+}
+
+.font13{
+    font-size:1.1em;
+}
+
+
+.boxInnerShadow{
+    outline:0px;
+    border:0px;
+    box-shadow:inset 0px -1px 1px #5c5c5c;
+}
+
+.width100{
+    width:100%;
+}
+
+.dimText50{
+    color:#7a7a7a;
+}
+
+.dimText75{
+    color:#3d3d3d;
+}
+
+textarea{
+    font-family: Ubuntu;
+}
+
+.post-holder .container_16,.post-holder .zoom-popup{
+    background-color:white;
+    box-shadow:0px 0px 3px #333;
+    padding:0px 10px 14px 10px;
+    border-radius:3px;
+}
+
+.titleHolder{
+    font-size: 1.2em;
+    font-family:Ubuntu;
+    line-height: 1.5em;
+}
+
+.articleHolder{
+    font-size:1em;
+    line-height: 1.3em;
+}
+
+.post-holder .no-background{
+    background-color:transparent;
+    box-shadow:0px 0px 0px #333;
+    padding:0px;
+    border-radius:0px;
+}
+
+
+.closeText{
+    font-size:12px;
+    float: right;
+    margin-top:6px;
+}
+
+input[type=text] {
+    border:1px solid #d5d2d2;
+    padding:5px;
+}
+
+.send-status{
+    text-align: right;
+}
+
+.loader{
+    display:none;   
+}
+
+.submitted{
+    display:none;
+    font-family: Geogia;
+    font-size: 12px;
+    color:#333;
+}
+
+.set{
+    display:none;
+}
+
+.set0{
+    display:block;
+}
+#navButtons{
+    text-align: left;
+}
+#navButtons .btn{
+    text-decoration : none;
+    line-height: 30px;
+    display: inline;
+    font-size:14px;
+    margin-left:10px;
+    font-family: Georgia;
+    padding:4px 6px;
+    
+    
+}
+.btn{
+    color:#666;
+    box-shadow:0px 0px 3px #666;
+    border-radius:4px;
+}
+
+#navButtons .btn:hover{
+    background-color:#333;
+    color:#eee;
+    cursor:pointer;
+}
+
+.activeSet{
+    background-color:#333;
+    color:white; 
+    box-shadow:0px 0px 2px #666;
+}
+
+.noOutline{
+    outline:0px;
+}
+
+.textInputPadding{
+    padding:3px;
+    border:1px solid #e4e4e4;
+}
+
+.font13{
+    font-size:13px;
+}
+
+.textInputPadding:focus{
+    border:1px solid #cc0033;
+}
+
+.submit-btn{
+    border:1px solid #eee;
+    background-color:white;
+    color:black;
+    padding:5px 3px;
+}
+
+.submit-btn:hover{
+    background-color: #cc0033;
+    color:white;
+    cursor:pointer;
+}
+.light-box{
+    width:100%;
+    display:none;
+    height:100%;
+    top:0px;
+    left:0px;
+    position: absolute;
+}
+.modal-box{
+    display:none;
+    width:300px;
+    font-size:13px;
+    font-style:italic;
+    border:1px solid #333;
+    box-shadow:0px 0px 10px #333;
+    border-radius:5px;
+    position:absolute;
+    background-color:white;
+    padding:15px;
+}
+
+.progress-bar{
+    height:10px;
+    width:295px;
+    border:1px solid #eee;
+    background-color:white;
+}
+.bar{
+    height:10px;
+    width:0px;
+    background-color: #006600;
+}
+
+.modal-box .msg{
+    margin-top:3px;
+}
+
+.alert-error{
+    color:#cc0033;
+}
